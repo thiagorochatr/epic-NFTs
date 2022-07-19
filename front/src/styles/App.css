@@ -89,6 +89,17 @@
   font-weight: bold;
 }
 
+.div-flex {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+}
+
+.some-margin-right-bottom {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
 /* KeyFrames */
 @-webkit-keyframes gradient-animation {
   0% {

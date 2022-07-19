@@ -180,12 +180,10 @@ const App = () => {
           ) : loading ? (
             <img alt="Espera!" src={wait} />
           ) : (
-            <div>
-              <div>
-                <p className="sub-text"> {idNFT + 1} / {TOTAL_MINT_COUNT} NFTs mintados</p>
-              </div>
-              <div>
-                <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
+            <>
+              <p className="sub-text"> {idNFT + 1} / {TOTAL_MINT_COUNT} NFTs mintados</p>
+              <div className="div-flex">
+                <button onClick={askContractToMintNft} className="cta-button connect-wallet-button some-margin-right-bottom">
                   😎 Mintar NFT
                 </button>
 
@@ -195,9 +193,10 @@ const App = () => {
                   </button>
                 </a>
               </div>
-            </div>
+            </>
           )}
         </div>
+
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
           <a
@@ -205,7 +204,9 @@ const App = () => {
             href={TWITTER_LINK}
             target="_blank"
             rel="noreferrer"
-          >{`feito com ❤️ por @${TWITTER_HANDLE}`}</a>
+          >
+            {`feito com ❤️ por @${TWITTER_HANDLE}`}
+          </a>
         </div>
       </div>
     </div>
